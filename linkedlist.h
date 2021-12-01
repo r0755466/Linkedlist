@@ -1,7 +1,7 @@
-#pragma onces
+#pragma once
 #include <string>
-#include "linkedlist.h"
 #include "node.h"
+#include "student.h"
 
 class Linkedlist
 {
@@ -17,5 +17,6 @@ public:
     size_t size(void);
 
 private:
+    // head = pointer type object Linkerlist, declare 0
     Linkedlist *head = nullptr;
 };

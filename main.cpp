@@ -6,7 +6,7 @@
 
 int main()
 {
-
+    // Make an student:mark(name = "Mark")
     Student mark("Mark");
     Student dennis("dennis");
     Student Rayan("Rayan");
@@ -21,7 +21,7 @@ int main()
 
     Linkedlist list;
 
-    // Compositie: Het gaat via de stack opgeslaan
+    // Compositie: Opslaan gebeurd op de stack
     list.add_in_front(Student("Jos"));
     list.add_in_front(Student("dam"));
     list.add_in_front(Student("Rommy"));

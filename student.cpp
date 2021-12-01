@@ -1,6 +1,4 @@
-
 #include "student.h"
-#include <string>
 
 // Scope resolution
 Student::Student(void) : Student("uknown")

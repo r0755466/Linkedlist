@@ -6,8 +6,6 @@ CFLAGS=-c -Wall
 # -c = Compile Only (no linking)
 # -Wall = show all warnings
 
-LDFLAGS=-lws2_32
-
 # Executable
 EXECUTABLE=Controller
 
@@ -18,8 +16,7 @@ EXECUTABLE=Controller
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): linkedlist.o student.o main.o 
-	$(CC) -o $(EXECUTABLE) linkedlist.o student.o main.o  $(LDFLAGS)
-
+	$(CC) -o $(EXECUTABLE) linkedlist.o student.o main.o  
 # Object file (C++ file die gecompileerd is)
 
 linkedlist.o: linkedlist.cpp
