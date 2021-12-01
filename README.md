@@ -28,6 +28,9 @@ std::string Linkedlist::to_string(void){
 ```
 
 Functie 2:
+Bij deze functie is er wat meer feedback:
+Bij de head:
+"a value of type "Linkedlist _" cannot be used to initialize an entity of type "Node _"C/C++(144)"
 
 ```cpp
 
