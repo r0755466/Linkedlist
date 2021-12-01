@@ -7,11 +7,17 @@ void Linkedlist::add_in_front(Student student)
     // We work with alloc memory to refer to an obj outside scope.
     // Node node(student);
 
-    // On the heap. Does not go out scope, saved on heap.
+    // We want to save the object student in the heap
+    // Declare pointer node type Node object is convert to new Node(student)
     Node *node = new Node(student);
 
+    // if not head
     if (!head)
+    {
+        // node pointer type object Node is saved in the heap
         head = node;
+    }
+
     else
     {
         node->next(head);
@@ -21,6 +27,8 @@ void Linkedlist::add_in_front(Student student)
 
 size_t Linkedlist::size(void)
 {
+    // size_t type is a base unsigned integer type
+
     return 0;
 }
 
@@ -32,9 +40,10 @@ std::string Linkedlist::to_string(void)
 
     std::string output = "";
 
+    // Make a pointer node Type Object Node to head = pointer to obj Linkedlist
     Node *node = head;
 
-    while (node) // Lazy evaluation!
+    while (node) // while we recive a node
     {
         // Never call method on nullptr
         output += node->to_string() + ""; // Output node
