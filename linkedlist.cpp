@@ -1,5 +1,4 @@
 #include "linkedlist.h"
-#include "node.h"
 
 void Linkedlist::add_in_front(Student student)
 {

@@ -1,5 +1,7 @@
-#include <string>
 #pragma onces
+#include <string>
+#include "linkedlist.h"
+#include "node.h"
 
 class Linkedlist
 {
